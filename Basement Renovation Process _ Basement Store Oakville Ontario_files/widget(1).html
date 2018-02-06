@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0706)https://install.kudobuzz.com/platforms/wix/widget?cacheKiller=1517876835131&compId=comp-ij7tc5v1&deviceType=desktop&height=189&instance=51aRF-QHwJmpaYwN23EEnd0y3dFgKS94DX1vOOZXq04.eyJpbnN0YW5jZUlkIjoiMmNmNzc1NWQtNjE4Yy00MTcwLWJiM2UtNzU5OTdkYTQwMjY5IiwiYXBwRGVmSWQiOiIxMzYzNjI5ZS1kYjM4LTdjYzItYmQzNi0xOGZlMGUwMGFkYTMiLCJzaWduRGF0ZSI6IjIwMTgtMDItMDZUMDA6Mjc6MTIuNjkyWiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiMTczLjMzLjIzOC4xNDkvNTY2NzQiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiMDhmMmYwMDMtYmU2ZS00ZGIzLTgzMjktNWIwYzhlYTU5ODk5Iiwic2l0ZU93bmVySWQiOiJlNDljZjdmNy1hMmNjLTQwZDEtOTJmNi1hMjZjMWNkYmYyYjMifQ&locale=en&pageId=masterPage&viewMode=site&vsi=97deb2e1-4663-486d-9c5c-be487b55d68b&width=50 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Kudobuzz</title>
+        <script src="./jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./wix.min.js"></script>
+        <script type="text/javascript" src="./jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./ui-lib.min.js"></script>
+        <script type="text/javascript" src="./base.js"></script>
+        <script type="text/javascript" src="./parsers.js"></script>
+        <script type="text/javascript" src="./jRate.js"></script>
+        <script type="text/javascript" src="./jquery.cookie.js"></script>
+        <script type="text/javascript" src="./tcal.js"></script>
+        <link rel="stylesheet" href="./ui-lib.min.css">
+        <meta name="_token" content="zp5h77UxNo7jY6GeviDHf7O2wWNELZysklPVz1ps">
+        <script src="./aws-sdk-2.1.12.min.js"></script>
+        <link rel="stylesheet" href="./widget.css">
+        <link rel="stylesheet" href="./bootstrap-custom.css">
+            <style wix-style="">.Title{ font:normal normal normal 40px/1.4em proxima-n-w01-reg,sans-serif; } .Menu{ font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal normal 25px/1.4em proxima-n-w01-reg,sans-serif; } .Heading-XL{ font:normal normal normal 60px/1.4em proxima-n-w01-reg,sans-serif; } .Heading-L{ font:normal normal normal 30px/1.4em proxima-n-w01-reg,sans-serif; } .Heading-M{ font:normal normal normal 25px/1.4em proxima-n-w01-reg,sans-serif; } .Heading-S{ font:normal normal normal 22px/1.4em proxima-n-w01-reg,sans-serif; } .Body-L{ font:normal normal normal 18px/1.4em proxima-n-w01-reg,sans-serif; } .Body-M{ font:normal normal normal 16px/1.4em proxima-n-w01-reg,sans-serif; } .Body-S{ font:normal normal normal 15px/1.4em proxima-n-w01-reg,sans-serif; } .Body-XS{ font:normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style><link type="text/css" rel="stylesheet" href="./languages.css"></head>
+    <body class="csstransforms">
+    <input type="hidden" id="base_url" value="https://install.kudobuzz.com/platforms/wix">
+    
+<div id="page-wrap">
+    <aside>
+        <h3 id="widget" class="neptune-widget" style="background-color: #BF1E2E; color: #FFFFFF;">★ REVIEWS ★</h3>
+    </aside>
+</div>
+
+<input type="hidden" id="account_id" value="1452386474565">
+<input type="hidden" id="fixed_position" value="CENTER_RIGHT">
+<input type="hidden" id="modal_title" value="Review Us">
+<input type="hidden" id="title_font_color" value="#FFFFFF">
+<input type="hidden" id="collapsed_color" value="#BF1E2E">
+<input type="hidden" id="token" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNDUyMzg2NDc0NTY0LCJhY2NvdW50X2lkIjoxNDUyMzg2NDc0NTY1LCJpYXQiOjE1MTc4NzY4Mzh9.3K2-mo3j7rM2eoeiHetVqWr3W-KV4pqAYy4nl0UtZw8">
+
+<script>
+    $(function(){
+        Wix.UI.initialize({});
+
+        var position = $("#fixed_position").val();
+        var compID = Wix.Utils.getCompId();
+        var instanceID = Wix.Utils.getInstanceId();
+
+        refreshWidget(position);
+
+        $('#widget').on('click', function (evt) {
+            var modal_url = $('#base_url').val() + "/modal";
+            Wix.openModal(modal_url, 500, 610);
+        });
+
+        Wix.addEventListener(Wix.Events.WINDOW_PLACEMENT_CHANGED, function (PLACEMENT) {
+            
+            proxy_user  = localStorage.getItem('proxy_user');
+            if(proxy_user){
+
+                localStorage.setItem('fixed_position', PLACEMENT);
+            }
+            $('#fixed_position').val(PLACEMENT);
+            refreshWidget(PLACEMENT)
+        })
+
+
+        /**
+         * Publish site
+         * 
+         */
+        Wix.addEventListener(Wix.Events.SITE_PUBLISHED, function (data) {
+            var account_id = $("#account_id").val()
+            var token = $('#token').val()
+
+            var param = {
+                'alignment': $('#fixed_position').val(),
+                'alignment_tmp': $('#fixed_position').val()
+            };
+
+            var url = API_JS + 'settings/site_review_form/update/' + account_id + '?token=' + token
+
+            $.post(url, param, function (data) {
+                console.log(data)
+            });
+        })
+
+        function refreshWidget(position){
+            console.log('position', position);
+            var height = $(".neptune-widget").width();
+
+            var width = 35;
+            var new_height = 0;
+            new_height = height + 15;
+
+            if (position !== 'TOP_CENTER' && position !== 'BOTTOM_CENTER') {
+
+                Wix.resizeWindow(width, new_height);
+
+                if( !$("body").hasClass('csstransforms') ){
+                    $("body").toggleClass("csstransforms");
+                }
+
+            } else {
+                
+                Wix.resizeWindow(new_height, width);
+
+                if( $("body").hasClass('csstransforms') ){
+                    $("body").toggleClass("csstransforms");
+                }
+            }
+        }
+
+
+    })
+</script>
+
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: { 'X-CSRF-Token' : $('meta[name=_token]').attr('content') }
+        });
+    </script>
+        
+
+
+</body></html>

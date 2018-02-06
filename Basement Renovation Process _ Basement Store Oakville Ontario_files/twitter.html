@@ -1,0 +1,43 @@
+
+<!-- saved from url=(0300)https://static.parastorage.com/services/santa/1.2716.20/static/external/twitter.html?align=left&compId=comp-ii70vftu&href=https%3A%2F%2Ftwitter.com%2Furbasementstore&lang=en&origin=http%3A%2F%2Fwww.basementstore.ca&screen_name=urbasementstore&show_count=false&show_screen_name=false&widgetType=FOLLOW -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style>
+    body {
+        margin: 0;
+    }
+</style>
+</head><body><iframe id="twt" allowtransparency="true" frameborder="0" scrolling="no" src="./follow_button.html" width="65" height="20"></iframe>
+<script type="text/javascript">
+
+    var WIDGETS = {
+        FOLLOW: 'follow_button',
+        TWEET: 'tweet_button'
+    };
+
+    var iframeNode = document.getElementById('twt');
+    var urlParams = getUrlParams();
+
+    window.addEventListener('message', function (event) {
+        var size;
+        var originRegexp = /https?:\/\/platform\.twitter\.com/ig;
+        var buttonObj = event.data["twttr.button"];
+
+        if (originRegexp.test(event.origin) && buttonObj && buttonObj.method === 'twttr.private.resizeButton') {
+            size = buttonObj.params[0];
+            iframeNode.width = size.width;
+            iframeNode.height = size.height;
+
+            window.parent.postMessage({type: 'twitterSize', size: size, compId: urlParams.compId}, decodeURIComponent(urlParams.origin));
+        }
+    });
+
+    iframeNode.src = "//platform.twitter.com/widgets/"+WIDGETS[urlParams.widgetType]+".html" + window.location.search;
+
+    function getUrlParams() {
+        return location.search.substr(1).split('&').reduce(function (res, value) {
+            var split = value.split('=');
+            res[split[0]] = split[1];
+            return res;
+        }, {});
+    }
+
+</script></body></html>
